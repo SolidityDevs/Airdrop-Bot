@@ -14,9 +14,7 @@ from ethtoken.abi import EIP20_ABI
 bsc =  "https://rpc.tomochain.com"
 w3 = Web3(Web3.HTTPProvider(bsc))
 
-#fandogh image init --name=fandoghibot
-#fandogh image publish --version v1
-#fandogh service deploy --version v1 --name fandoghibot
+
 
 
 # create a code incloud ascii_uppercase + digits od any lens
@@ -29,7 +27,7 @@ def db_connect():
     return sqlite3.connect('tel.db')
 
 # connect to bot
-new_bot = Bot("5176519764:AAEdGTBOHing9pKt9JQ32gry2ExJ08hwtr8")
+new_bot = Bot("bot api")
 print(new_bot)
 
 # Basic info
@@ -360,7 +358,7 @@ def reset(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("5176519764:AAEdGTBOHing9pKt9JQ32gry2ExJ08hwtr8")
+    updater = Updater("your bot api")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
